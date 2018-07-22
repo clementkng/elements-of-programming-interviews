@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.List;
 
 public class DutchNationalFlag {
@@ -7,6 +8,16 @@ public class DutchNationalFlag {
     */
 
     public static void dutchNationalFlag(int p, List<Integer> A) {
-
+        int pivot = A.get(p);
+        int smaller = 0, equal = 0, larger = p + 1;
+        while (equal < larger) {
+            if (A.get(equal) < pivot) {
+                Collections.swap(A, smaller++, equal++);
+            } else if (A.get(equal) == pivot) {
+                equal++;
+            } else {
+                Collections.swap(A, equal, --larger);
+            }
+        }
     }
 }

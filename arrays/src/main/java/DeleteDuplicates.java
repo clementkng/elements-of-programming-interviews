@@ -7,6 +7,15 @@ public class DeleteDuplicates {
     */
 
     public static int deleteDuplicates(List<Integer> A) {
-        return 0;
+        int writeIndex = 1;
+        for (int i = 1; i < A.size(); i++) {
+            if (!A.get(i).equals(A.get(writeIndex-1))) {
+                A.set(writeIndex++,A.get(i));
+            }
+        }
+        for (int i = writeIndex; i < A.size(); i++) {
+            A.set(i, null);
+        }
+        return writeIndex;
     }
 }
