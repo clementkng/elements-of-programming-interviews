@@ -9,7 +9,7 @@ public class SumRootToLeafTest {
 
     @Test
     public void sumRootToLeaf1() throws Exception {
-        expected = 6;
+        expected = 3;
         tree = new BinaryTree<>(0);
         tree.right = new BinaryTree<>(1);
         tree.right.right = new BinaryTree<>(0);
@@ -21,7 +21,7 @@ public class SumRootToLeafTest {
 
     @Test
     public void sumRootToLeaf2() throws Exception {
-        expected = 8;
+        expected = 11;
         tree = new BinaryTree<>(1);
         tree.right = new BinaryTree<>(1);
         tree.right.right = new BinaryTree<>(0);
@@ -33,7 +33,7 @@ public class SumRootToLeafTest {
 
     @Test
     public void sumRootToLeaf3() throws Exception {
-        expected = 16;
+        expected = 22;
         tree = new BinaryTree<>(1);
         tree.right = new BinaryTree<>(1);
         tree.right.right = new BinaryTree<>(0);
