@@ -23,8 +23,8 @@ public class ReconstructBinaryTreeTest {
     @Test
     public void binaryTreeFromPreorderInorder2() throws Exception {
         expected = BinaryTreeUtil.getFullTree();
-        preorder = Arrays.asList(0,1,2,3,4,5,6);
-        inorder = Arrays.asList(2,1,3,0,5,4,6);
+        preorder = Arrays.asList(4,2,1,3,6,5,7);
+        inorder = Arrays.asList(1,2,3,4,5,6,7);
 
         test(expected, preorder, inorder);
     }
