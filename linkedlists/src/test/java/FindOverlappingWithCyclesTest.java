@@ -41,7 +41,7 @@ public class FindOverlappingWithCyclesTest {
         list2 = LinkedListUtil.createLinkedList(1, 2, 3, 4, 5);
         list1.get(1).next = list2.get(3);
         list2.get(5).next = list2.get(1);
-        overlap = LinkedListUtil.createLinkedList(2, 3);
+        overlap = LinkedListUtil.createLinkedList( 3);
 
         test(overlap, list1, list2);
     }
